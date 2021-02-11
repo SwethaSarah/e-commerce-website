@@ -21,4 +21,6 @@ app.use("/api/order",orderRoute);
 
 app.listen(5000,()=>{
     console.log("connected");
-})
+});
+
+app.get('/favicon.ico', (req, res) => res.status(204));
