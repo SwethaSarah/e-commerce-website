@@ -1,0 +1,656 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  font-size: 15px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100vh;
+  min-height:100%;
+}
+
+.header{
+  grid-area: header;
+  background-color: rgb(240, 11, 60);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 10px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  overflow: hidden;
+}
+
+.nav-links a{
+  padding: 0.5rem ;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown{
+  border: none;
+  outline: none;
+  color: black;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown p{
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-links{
+  display: flex;
+  padding: 14px 16px;
+}
+
+.nav-links a, .brand a{
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover,.brand a:hover{
+color: black;
+}
+
+.main{
+  grid-area: main;
+}
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 100px;
+  justify-content: center;
+}
+
+li{
+  list-style-type: none;
+}
+
+.instock{
+  color: rgb(32, 197, 32);
+}
+
+.outofstock{
+  color: red;
+}
+
+.product{
+  border-bottom: 1px grey solid;
+  border-radius: 5px;
+  width: 200px;
+  height: 400px;
+}
+
+.product:hover{
+  background-color: white;
+  width: 220px;
+  transform: scale(1.01,1.01);
+  transition: all .2s ease-in-out;
+}
+
+.product-description{
+  width: 100%;
+}
+
+.product-desc p{
+  text-align: left;
+}
+
+.product img{
+  height: 300px;
+  width: 220px;
+}
+
+
+.product-name{
+  color: rgb(8, 74, 255);
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.product-name:hover{
+  color: rgba(240, 11, 61, 0.842);
+}
+
+.detail-product{
+  margin: 1%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info{
+  width: 300px;
+  height: auto;
+  margin: auto 0;
+}
+
+.addtocart{
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: rgba(0, 0, 0, 0.315);
+  width: 250px;
+  margin: auto 0;
+  height: 150px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.desc{
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+}
+
+.detail-img img{
+  margin: 0 auto;
+  height: 400px;
+  width: 300px;
+}
+
+.cartItems{
+  display: flex;
+  justify-content: flex-end;
+  /* border: 1px solid black; */
+
+}
+
+.ItemDes{
+  margin: auto 0;
+  display: flex;
+  line-height: 1.6;
+  flex-direction: column;
+}
+
+.actions{
+  margin: auto 0;
+}
+
+.Products-container {
+  margin: 0px 100px;
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+}
+
+.cart-list-container{
+  width: 70%;
+  min-height: 100%;
+  justify-content: space-evenly;
+}
+
+.cart-heading{
+  display: flex;
+  line-height: 2;
+  justify-content: center
+}
+
+.cart-action{
+margin: auto;
+padding: 30px;
+text-align: center;
+border-style: solid;
+border-radius: 3px;
+border-width: 1.5px;
+line-height: 2;
+border-color: grey;
+}
+
+.actionBtn{
+  margin: 3px;
+  background-color: white;
+  border-style: none;
+  outline: none;
+  color: blue;
+}
+
+form{
+  width: 450px;
+  text-align: center;
+  padding: 40px;
+  margin: 0 auto;
+  line-height: 2;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: rgba(0, 0, 0, 0.315);
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signinForm{
+  margin: 7% 32%;
+}
+
+.addtocart .primaryBtn, .ProfileForm .primaryBtn{
+  width: 200px;
+}
+
+.ProfileForm td{
+  vertical-align: top;
+}
+
+.ProfileForm{
+  border-style: none;
+}
+
+.ProfileForm input{
+  width: 180px;
+  height: auto;
+  border: none;
+}
+
+.ProfileForm table td{
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.ProfileForm textarea{
+  width: auto;
+  height: auto;
+  resize: none;
+  border: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 5px;
+  
+}
+
+.deleteForm{
+  width: 100%;
+  border-style: hidden ;
+  padding: 0px;
+}
+
+h1{
+  margin: 10px;
+}
+
+table{
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  border: 1px;
+}
+
+th{
+  padding: 1%;
+  background-color: rgba(255, 185, 72, 0.98);
+  border: 1px;
+}
+
+td{
+  padding: 1%;
+  border: 1px;
+}
+
+.addproductform{
+  width: 100%;
+  margin: 0 auto;
+}
+
+textarea{
+  margin-bottom: 10px;
+  width: 360px;
+  text-align: center;
+  outline: none;
+}
+
+input{
+  width: 365px;
+  margin-bottom: 10px;
+  height: 40px;
+  text-align: center;
+  outline: none;
+}
+
+input:focus,textarea:focus{
+  box-shadow:0 0 5px rgb(240, 11, 60);
+  border: 1px solid rgb(240, 11, 60);
+}
+
+.placeHolder::placeholder{
+  color:black;
+  opacity: 1;
+}
+
+.primaryBtn{
+  background-color: white;
+  border-color: rgb(240, 11, 61);
+  border-radius: 2px;
+  width: 100%;
+  border-width: 1.5px ;
+  color: rgb(240, 11, 61);
+  outline: none;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 3px;
+  padding: 8px;
+}
+
+.primaryBtn:hover{
+  background-color: rgb(240, 11, 61);
+  border-color: rgb(240, 11, 61);
+  color: white;
+}
+
+.secondaryBtn{
+  border-radius: 2px;
+  width: 100%;
+  border-width: 1.5px ;
+  outline: none;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 6px;
+}
+
+.footer{
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width:520px){
+  .header{
+    grid-area: header;
+    background-color: rgb(240, 11, 60);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    overflow: hidden;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown{
+    border: none;
+    outline: none;
+    color: black;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow-x: hidden;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown p{
+    color: black;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  h1{
+    font-size: 16px;
+  }
+  textarea{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 5px;
+  }
+  input{
+    width: 150px;
+    height: 30px;
+    margin-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .detail-product{
+    flex-direction: column;
+  }
+  .info{
+    width: 250px;
+    margin: 0 auto;
+  }
+  .product{
+    width: 220px;
+    height: 400px;
+
+  }
+  .addtocart{
+    width: 200px;
+    margin: 0 auto;
+    height: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .addtocart .primaryBtn, .ProfileForm .primaryBtn{
+    width: 150px;
+  }
+  
+  .detail-img img{
+    height: 350px;
+    width: 250px;
+  }
+  
+.desc{
+  flex-direction: column;
+}
+
+  .cartItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+
+  .ItemDes{
+    margin: auto 0;
+    display: flex;
+    line-height: 1.6;
+    flex-direction: column;
+  }
+  
+  .actions{
+    margin: auto 0;
+  }
+  .products{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  .Products-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .cart-list-container{
+    width: 100%;
+    min-height: 100%;
+    justify-content: center;
+  }
+  .cart-heading{
+    display: flex;
+    line-height: 2;
+    justify-content: center
+  }
+  
+  .cart-action{
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+  border-style: none;
+  }
+
+  table{
+    font-size: 12px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  td{
+    max-width: 25px;
+    word-wrap: break-word;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  form{
+    width: 300px;
+    text-align: center;
+    padding: 40px;
+    margin: 0 auto;
+    line-height: 2;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: rgba(0, 0, 0, 0.315);
+  }
+  
+  .primaryBtn{
+    background-color: white;
+    border-color: rgb(240, 11, 61);
+    border-radius: 2px;
+    width: 100%;
+    border-width: 1.5px ;
+    color: rgb(240, 11, 61);
+    outline: none;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 8px;
+  }
+  
+  .primaryBtn:hover{
+    background-color: rgb(240, 11, 61);
+    border-color: rgb(240, 11, 61);
+    color: white;
+  }
+  
+  .secondaryBtn{
+    border-radius: 2px;
+    width: 100%;
+    border-width: 1.5px ;
+    outline: none;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 6px;
+  }
+
+  .actionBtn{
+    margin: 1px;
+    font-size: 12px;
+  }
+  
+  .ProfileForm{
+    width: 300px;
+  }
+  
+  .ProfileForm input{
+    width: 150px;
+    height: auto;
+    border: none;
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+  
+  .ProfileForm table td{
+    font-size: 14px;
+    text-align: center;
+    width: 50px;
+  }
+  .ProfileForm table{
+    margin-left: -30%;
+  }
+  
+  .ProfileForm textarea{
+    width: 150px;
+    height: auto;
+    resize: none;
+    border: none;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+  }
+
+}
