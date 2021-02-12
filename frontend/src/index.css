@@ -611,7 +611,7 @@ input:focus,textarea:focus{
   .ProfileForm{
     width: 300px;
   }
-  .ProfileForm input, textarea{
+  .ProfileForm input, .ProfileForm textarea{
     text-align: left ;
   }
   
