@@ -35,6 +35,7 @@ function RegisterScreen(props){
     },[userInfo]);
 
     return <div className="form">
+        <h1>Create Account</h1>
         <form onSubmit = {submitHandler}>
           <input type="text" name="name" id="name" placeholder="Name" onChange={(e) => setName(e.target.value)}></input>
           <input type="email" name="email" id="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)}></input>
