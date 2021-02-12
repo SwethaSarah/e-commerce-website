@@ -50,7 +50,7 @@ function ProfileScreen(props){
     return (loading? <div>Loading...</div>:
       error? <div>{error}</div>:(
     <div>
-            </br>
+            <br/>
             <h1>Profile</h1>
         <form className="ProfileForm" onSubmit={submitHandler}>
           {payload &&
