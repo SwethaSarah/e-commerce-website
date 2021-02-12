@@ -18,6 +18,6 @@ app.use("/api/products",productRoute);
 app.use("/api/cart",cartRoute);
 app.use("/api/order",orderRoute);
 
-app.listen(5000,()=>{
+app.listen(process.env.PORT || 5000,()=>{
     console.log("connected");
 })
