@@ -38,8 +38,8 @@ function App() {
                 <div className="dropdown-content">
                 <Link to={"/profile"}><p>Profile</p></Link>
                 {userInfo.isAdmin&&<Link to={"/ManageProducts"}><p>Dashboard</p></Link>}
-                <Link to={"/orders"}><p>Your Orders</p></Link>
-                {userInfo.isAdmin?<Link to={"/ManageOrders"}><p>Orders</p></Link>:<Link to={"/"}onClick={signoutHandler}><p>Sign Out</p></Link>}
+                {userInfo.isAdmin?<Link to={"/ManageOrders"}><p>Orders</p></Link>:<Link to={"/orders"}><p>Your Orders</p></Link>}
+                <Link to={"/"}onClick={signoutHandler}><p>Sign Out</p></Link>
                 </div>
                 </div>
                 :
