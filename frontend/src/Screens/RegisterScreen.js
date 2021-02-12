@@ -43,7 +43,7 @@ function RegisterScreen(props){
           <input type="password" name="password" id="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}></input>
           <input type="password" name="repassword" id="repassword" placeholder="Re-enter Password" onChange={(e) => setRePassword(e.target.value)}></input>
           <button type="submit" className="primaryBtn" name="signIn">Register</button>
-          <label>Already have an account?</label>
+          <label>Already have an account?</label><br/>
           <Link to="/signin">
           <button className="secondaryBtn">Sign In</button></Link>
         </form>
