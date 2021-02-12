@@ -35,7 +35,7 @@ function OrdersScreen(props){
               <th>Order ID</th>
               <th>Cust Name</th>
               <th>Cust Address</th>
-              <th>Products</th>
+              <th>Products ID</th>
               <th>Qty</th>
               <th>Status</th>
               <th colSpan="2">Actions</th>
