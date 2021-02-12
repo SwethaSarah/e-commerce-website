@@ -568,7 +568,7 @@ input:focus,textarea:focus{
   }
   .cart-list img{
     width: 160px;
-    margin-left: auto;
+    margin: 0 auto;
   }
   .cart-heading{
     display: flex;
