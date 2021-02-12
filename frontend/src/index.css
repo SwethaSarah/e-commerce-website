@@ -126,7 +126,7 @@ li{
   border-bottom: 1px grey solid;
   border-radius: 5px;
   width: 200px;
-  height: 400px;
+  max-height: 420px;
 }
 
 .product:hover{
@@ -408,6 +408,7 @@ input:focus,textarea:focus{
 }
 
 @media screen and (max-width:520px){
+
   .header{
     grid-area: header;
     background-color: rgb(240, 11, 60);
@@ -423,7 +424,10 @@ input:focus,textarea:focus{
 
   .dropdown {
     float: left;
-    overflow-x: hidden;
+    overflow: hidden;
+  }
+  
+  .dropdown{
     border: none;
     outline: none;
     color: black;
@@ -453,7 +457,6 @@ input:focus,textarea:focus{
     text-decoration: none;
     display: block;
     text-align: left;
-    overflow-x: hidden;
   }
   .dropdown p{
     color: black;
@@ -521,7 +524,8 @@ input:focus,textarea:focus{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 0 auto;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
   .ItemDes{
@@ -550,7 +554,7 @@ input:focus,textarea:focus{
   }
   
   .cart-list-container{
-    width: 90%;
+    width: 95%;
     min-height: 100%;
     margin: 0 auto;
   }
@@ -563,7 +567,7 @@ input:focus,textarea:focus{
     justify-content: space-around;
   }
   .cart-list img{
-    width: 150px;
+    width: 200px;
     margin-left: auto;
   }
   .cart-heading{
