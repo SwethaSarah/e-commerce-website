@@ -17,10 +17,10 @@ mongoose.connect(process.env.MONGODB_URL,{useNewUrlParser: true,useUnifiedTopolo
 const app=express();
 app.use(bodyParser.json());
 
-app.use("https://shoplinewebsite.herokuapp.com/api/users",userRoute);
-app.use("https://shoplinewebsite.herokuapp.com/api/products",productRoute);
-app.use("https://shoplinewebsite.herokuapp.com/api/cart",cartRoute);
-app.use("https://shoplinewebsite.herokuapp.com/api/order",orderRoute);
+app.use("/api/users",userRoute);
+app.use("/api/products",productRoute);
+app.use("/api/cart",cartRoute);
+app.use("/api/order",orderRoute);
 
 app.listen(process.env.PORT || 5000,()=>{
     console.log("connected");
