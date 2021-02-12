@@ -300,6 +300,7 @@ textarea{
   width: 365px;
   height: 70px;
   resize: none;
+  text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-top: 5px;
 }
@@ -408,13 +409,16 @@ input:focus,textarea:focus{
 
 @media screen and (max-width:520px){
 
+  *{
+    overflow: hidden;
+  }
   .header{
     grid-area: header;
     background-color: rgb(240, 11, 60);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 10px;
     padding-left: 20px;
     padding-right: 10px;
