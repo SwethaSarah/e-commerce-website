@@ -1,6 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
+import path from 'path';
 import bodyParser from 'body-parser';
 import userRoute from './routes/userRoute.js';
 import cartRoute from './routes/cartRoute.js';
