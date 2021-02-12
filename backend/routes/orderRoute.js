@@ -1,6 +1,6 @@
 import express from 'express';
-import Order from '../models/orderModel';
-import { isAdmin, isAuth } from '../util';
+import Order from '../models/orderModel.js';
+import { isAdmin, isAuth } from '../util.js';
 
 const router = express.Router();
 
