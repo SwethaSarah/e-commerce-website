@@ -1,12 +1,11 @@
 {
-  "name": "shopline",
-  "type": "module",
+  "name": "e-commerce-website",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cd frontend && npm install && npm run build",
-    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+    "start": "concurrently \"npm run server\" \"cd frontend && npm start\"",
+    "server": "nodemon --watch backend --exec babel-node backend/server.js"
   },
   "author": "",
   "license": "ISC",
