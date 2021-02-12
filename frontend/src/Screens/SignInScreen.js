@@ -26,6 +26,7 @@ function SignInScreen(props){
     },[userInfo]);
 
     return <div className="form">
+        <h1>Sign In</h1>
         <form className="signinForm" onSubmit = {submitHandler}>
           {loading?<div>Loading</div>:<div></div>}
           {error?<div>{error}</div>:<div></div>}
