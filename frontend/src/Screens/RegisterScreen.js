@@ -42,7 +42,7 @@ function RegisterScreen(props){
           <textarea type="text" name="address" id="addresss" placeholder="Address" cols="45" rows="5" onChange={(e) => setAddress(e.target.value)}></textarea>
           <input type="password" name="password" id="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}></input>
           <input type="password" name="repassword" id="repassword" placeholder="Re-enter Password" onChange={(e) => setRePassword(e.target.value)}></input>
-          <button type="submit" className="primaryBtn" name="signIn">Register</button>
+          <button type="submit" className="primaryBtn" name="signIn">Register</button><br/>
           <label>Already have an account?</label><br/>
           <Link to="/signin">
           <button className="secondaryBtn">Sign In</button></Link>
