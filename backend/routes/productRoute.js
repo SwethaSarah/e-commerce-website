@@ -1,7 +1,7 @@
 import express from 'express';
-import Product from '../models/productModel';
+import Product from '../models/productModel.js';
 import BodyParser from 'body-parser';
-import { isAdmin, isAuth } from '../util';
+import { isAdmin, isAuth } from '../util.js';
 import path from 'path';
 import multer from 'multer';
 import fs from 'fs'; 
