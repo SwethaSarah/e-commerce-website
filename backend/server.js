@@ -2,10 +2,10 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
-import userRoute from './routes/userRoute';
-import cartRoute from './routes/cartRoute';
-import orderRoute from './routes/orderRoute';
-import productRoute from './routes/productRoute';
+import userRoute from './routes/userRoute.js';
+import cartRoute from './routes/cartRoute.js';
+import orderRoute from './routes/orderRoute.js';
+import productRoute from './routes/productRoute.js';
 
 dotenv.config();
 mongoose.connect(config.MONGODB_URL,{useNewUrlParser: true});
