@@ -408,10 +408,6 @@ input:focus,textarea:focus{
 }
 
 @media screen and (max-width:520px){
-
-  *{
-    overflow: hidden;
-  }
   .header{
     grid-area: header;
     background-color: rgb(240, 11, 60);
@@ -427,10 +423,7 @@ input:focus,textarea:focus{
 
   .dropdown {
     float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown{
+    overflow-x: hidden;
     border: none;
     outline: none;
     color: black;
@@ -460,6 +453,7 @@ input:focus,textarea:focus{
     text-decoration: none;
     display: block;
     text-align: left;
+    overflow-x: hidden;
   }
   .dropdown p{
     color: black;
