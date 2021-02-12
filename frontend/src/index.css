@@ -141,12 +141,12 @@ li{
 }
 
 .product-desc p{
-  text-align: left;
+  text-align: center;
 }
 
 .product img{
-  height: 300px;
-  width: 220px;
+  height: 320px;
+  width: 240px;
 }
 
 
@@ -168,7 +168,7 @@ li{
 }
 
 .info{
-  width: 300px;
+  width: 320px;
   height: auto;
   margin: auto 0;
 }
@@ -179,7 +179,7 @@ li{
   border-color: rgba(0, 0, 0, 0.315);
   width: 250px;
   margin: auto 0;
-  height: 150px;
+  height: 200px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -269,7 +269,7 @@ form{
 }
 
 .signinForm{
-  margin: 7% 32%;
+  margin: auto;
 }
 
 .addtocart .primaryBtn, .ProfileForm .primaryBtn{
@@ -296,14 +296,16 @@ form{
   text-align: center;
 }
 
-.ProfileForm textarea{
-  width: auto;
-  height: auto;
+textarea{
+  width: 365px;
+  height: 70px;
   resize: none;
-  border: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-top: 5px;
-  
+}
+
+.ProfileForm textarea{
+  border: none;
 }
 
 .deleteForm{
@@ -405,6 +407,7 @@ input:focus,textarea:focus{
 }
 
 @media screen and (max-width:520px){
+
   .header{
     grid-area: header;
     background-color: rgb(240, 11, 60);
@@ -466,17 +469,14 @@ input:focus,textarea:focus{
     display: block;
   }
   
-  h1{
-    font-size: 16px;
-  }
   textarea{
-    width: 200px;
-    height: 40px;
+    width: 220px;
+    height: 60px;
     margin-bottom: 5px;
   }
   input{
-    width: 150px;
-    height: 30px;
+    width: 220px;
+    height: 40px;
     margin-bottom: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
@@ -499,26 +499,32 @@ input:focus,textarea:focus{
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  
-  .addtocart .primaryBtn, .ProfileForm .primaryBtn{
+  .addtocart .primaryBtn{
     width: 150px;
+    padding: 0px;
+  }
+  
+  .primaryBtn, .secondaryBtn{
+    width: 150px;
+    height: 30px;
+    padding: 0px;
   }
   
   .detail-img img{
     height: 350px;
-    width: 250px;
+    width: 200px;
   }
   
 .desc{
   flex-direction: column;
 }
 
-  .cartItems{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0 auto;
-  }
+.cartItems{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
 
   .ItemDes{
     margin: auto 0;
@@ -530,6 +536,7 @@ input:focus,textarea:focus{
   .actions{
     margin: auto 0;
   }
+
   .products{
     display: flex;
     flex-wrap: wrap;
@@ -545,9 +552,21 @@ input:focus,textarea:focus{
   }
   
   .cart-list-container{
-    width: 100%;
+    width: 90%;
     min-height: 100%;
-    justify-content: center;
+    margin: 0 auto;
+  }
+  .desc{
+    width: 40%;
+    height: 40%;
+    margin: auto 0;
+  }
+  .cart-list{
+    justify-content: space-around;
+  }
+  .cart-list img{
+    width: 150px;
+    margin-left: auto;
   }
   .cart-heading{
     display: flex;
@@ -564,7 +583,7 @@ input:focus,textarea:focus{
 
   table{
     font-size: 12px;
-    width: 300px;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
   }
@@ -586,71 +605,20 @@ input:focus,textarea:focus{
     border-color: rgba(0, 0, 0, 0.315);
   }
   
-  .primaryBtn{
-    background-color: white;
-    border-color: rgb(240, 11, 61);
-    border-radius: 2px;
-    width: 100%;
-    border-width: 1.5px ;
-    color: rgb(240, 11, 61);
-    outline: none;
-    font-weight: 300;
-    font-size: 20px;
-    letter-spacing: 3px;
-    padding: 8px;
-  }
-  
-  .primaryBtn:hover{
-    background-color: rgb(240, 11, 61);
-    border-color: rgb(240, 11, 61);
-    color: white;
-  }
-  
-  .secondaryBtn{
-    border-radius: 2px;
-    width: 100%;
-    border-width: 1.5px ;
-    outline: none;
-    font-weight: 300;
-    font-size: 15px;
-    letter-spacing: 2px;
-    padding: 6px;
-  }
-
-  .actionBtn{
-    margin: 1px;
-    font-size: 12px;
-  }
-  
   .ProfileForm{
     width: 300px;
   }
-  
-  .ProfileForm input{
-    width: 150px;
-    height: auto;
-    border: none;
-    font-size: 14px;
-    word-wrap: break-word;
+  .ProfileForm input, textarea{
+    text-align: left ;
   }
   
   .ProfileForm table td{
     font-size: 14px;
-    text-align: center;
+    text-align: left;
     width: 50px;
   }
   .ProfileForm table{
-    margin-left: -30%;
-  }
-  
-  .ProfileForm textarea{
-    width: 150px;
-    height: auto;
-    resize: none;
-    border: none;
-    font-size: 14px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 5px;
+    margin-left: 0%;
   }
 
 }
