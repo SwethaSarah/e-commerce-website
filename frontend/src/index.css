@@ -567,7 +567,7 @@ input:focus,textarea:focus{
     justify-content: space-around;
   }
   .cart-list img{
-    width: 200px;
+    width: 160px;
     margin-left: auto;
   }
   .cart-heading{
@@ -608,10 +608,11 @@ input:focus,textarea:focus{
   }
   
   .ProfileForm{
-    width: 300px;
+    width: auto;
   }
   .ProfileForm input, textarea{
     text-align: left ;
+    width: auto;
   }
   
   .ProfileForm table td{
