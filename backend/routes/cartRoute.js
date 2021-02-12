@@ -1,7 +1,7 @@
 import express from 'express';
-import Product from '../models/productModel';
-import User from '../models/userModel';
-import { isAuth } from '../util';
+import Product from '../models/productModel.js';
+import User from '../models/userModel.js';
+import { isAuth } from '../util.js';
 
 const router = express.Router();
 
