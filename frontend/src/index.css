@@ -123,10 +123,8 @@ li{
 }
 
 .product{
-  border-bottom: 1px grey solid;
-  border-radius: 5px;
   width: 200px;
-  max-height: 420px;
+  height: 300px;
 }
 
 .product:hover{
@@ -513,7 +511,7 @@ input:focus,textarea:focus{
   
   .detail-img img{
     height: 350px;
-    width: 200px;
+    width: 240px;
   }
   
 .desc{
@@ -523,7 +521,7 @@ input:focus,textarea:focus{
 .cartItems{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-right: 5%;
   margin-left: 5%;
 }
@@ -554,21 +552,19 @@ input:focus,textarea:focus{
   }
   
   .cart-list-container{
-    width: 95%;
+    width: 100%;
     min-height: 100%;
-    margin: 0 auto;
   }
   .desc{
     width: 40%;
     height: 40%;
     margin: auto 0;
   }
-  .cart-list{
-    justify-content: space-around;
-  }
+
   .cart-list img{
     width: 160px;
     margin: 0 auto;
+
   }
   .cart-heading{
     display: flex;
@@ -608,11 +604,10 @@ input:focus,textarea:focus{
   }
   
   .ProfileForm{
-    width: auto;
+    width: 300px;
   }
   .ProfileForm input, textarea{
     text-align: left ;
-    width: auto;
   }
   
   .ProfileForm table td{
