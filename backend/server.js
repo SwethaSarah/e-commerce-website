@@ -8,7 +8,7 @@ import orderRoute from './routes/orderRoute.js';
 import productRoute from './routes/productRoute.js';
 
 dotenv.config();
-mongoose.connect(config.MONGODB_URL,{useNewUrlParser: true});
+mongoose.connect(process.env.MONGODB_URL,{useNewUrlParser: true});
 
 const app=express();
 app.use(bodyParser.json());
