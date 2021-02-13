@@ -422,7 +422,6 @@ input:focus,textarea:focus{
     font-weight: 10px;
     padding-left: 20px;
     padding-right: 10px;
-    overflow: hidden;
   }
 
   .dropdown {
