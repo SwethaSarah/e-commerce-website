@@ -5,6 +5,7 @@ const listProducts = () => async (dispatch) => {
     try{
         dispatch({type: PRODUCT_LIST_REQUEST});
         const {data} = await Axios.get("/api/products");
+        console.log("homescreen",data);
         dispatch({type: PRODUCT_LIST_SUCCESS, payload: data});
     }
     catch(error){
